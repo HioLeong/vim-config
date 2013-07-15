@@ -7,8 +7,8 @@ Bundle 'flazz/vim-colorschemes'
 :syntax on
 :set cursorline
 :set nu
-:colorscheme zenburn
-
+:colorscheme molokai
+:set showcmd
 
 
 
