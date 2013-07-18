@@ -7,6 +7,9 @@ Bundle 'flazz/vim-colorschemes'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'scrooloose/nerdtree'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
 
 "
 colorscheme molokai
