@@ -11,6 +11,7 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'jeetsukumaran/vim-buffergator'
+Bundle 'takac/vim-hardtime'
 
 "
 colorscheme molokai
@@ -23,9 +24,13 @@ set autoindent
 
 "Key mappings
 map <C-n> :NERDTreeToggle<CR>
+map <C-m> 0i//
+unmap <CR>
+
 
 " Use ctrl-[hjkl] to select the active split!
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
+imap jj <Esc>
