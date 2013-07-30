@@ -19,6 +19,8 @@ set nu
 set showcmd
 set incsearch
 set autoindent
+set nocompatible
+filetype plugin indent on
 
 "Key mappings
 map <C-n> :NERDTreeToggle<CR>
