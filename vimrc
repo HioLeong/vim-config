@@ -21,6 +21,8 @@ set showcmd
 set incsearch
 set autoindent
 set nocompatible
+set listchars=tab:▸\ ,trail:·
+set list
 filetype plugin indent on
 
 "Key mappings
