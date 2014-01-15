@@ -248,6 +248,8 @@ if !exists(":Checkstyle")
   command -nargs=0 -buffer Checkstyle :call eclim#java#src#Checkstyle()
 endif
 
+map <C-O> :JavaImportOrganize <CR>
+
 " }}}
 
 " vim:ft=vim:fdm=marker

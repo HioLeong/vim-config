@@ -10,11 +10,15 @@ Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'takac/vim-hardtime'
 Bundle 'rking/ag.vim'
 Bundle 'arecarn/crunch'
+Bundle 'vim-scripts/todo.vim'
+Bundle  'jcf/vim-latex'
+
 
 "Snipmates
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
+Bundle "aaronbieber/quicktask"
 
 colorscheme molokai
 syntax on
@@ -49,3 +53,13 @@ imap jj <Esc>
 " Configure Ultisnips.
 let g:UltiSnipsExpandTrigger = '<c-j>'
 let g:UltiSnipsSnippetDirectories = ['.snippets', 'snippets']
+
+"ejs, configurations
+au BufNewFile,BufRead *.ejs set filetype=html
+
+"eclim setting
+let g:EclimCompletionMethod = 'omnifunc'
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
