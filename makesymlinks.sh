@@ -30,7 +30,7 @@ for file in $files; do
 done
 
 echo "Installing Vundle"
-if [ ! -f ~/.vim/bundle/vundle ]; then
+if [ ! -f ~/.vim/bundle/Vundle.vim ]; then
 	mkdir ~/.vim/
 	mkdir -p ~/.vim/bundle/vundle
 	git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle;
