@@ -1,24 +1,29 @@
-"undles settings
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'kien/ctrlp.vim'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'scrooloose/nerdtree'
-Bundle 'jeetsukumaran/vim-buffergator'
-Bundle 'takac/vim-hardtime'
-Bundle 'rking/ag.vim'
-Bundle 'arecarn/crunch'
-Bundle 'vim-scripts/todo.vim'
-Bundle 'jcf/vim-latex'
-Bundle 'tpope/vim-surround'
+"Vundles settings
+set nocompatible " be iMproved, required
+filetype off " required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'kien/ctrlp.vim'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'takac/vim-hardtime'
+Plugin 'rking/ag.vim'
+Plugin 'arecarn/crunch'
+Plugin 'vim-scripts/todo.vim'
+Plugin 'jcf/vim-latex'
+Plugin 'tpope/vim-surround'
 
 "Snipmates
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "aaronbieber/quicktask"
+Plugin "MarcWeber/vim-addon-mw-utils"
+Plugin "tomtom/tlib_vim"
+Plugin "garbas/vim-snipmate"
+Plugin "aaronbieber/quicktask"
+call vundle#end()
+filetype plugin indent on    " required
 
 colorscheme molokai
 syntax on
