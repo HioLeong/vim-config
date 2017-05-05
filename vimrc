@@ -1,4 +1,12 @@
 set shell=/bin/bash
+
+"Pathogen
+execute pathogen#infect()
+
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_wq = 0
+
 "Vundles settings
 set nocompatible " be iMproved, required
 filetype off " required
@@ -22,6 +30,9 @@ Plugin 'heavenshell/vim-jsdoc'
 Plugin 'Shutnik/jshint2.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'sukima/xmledit'
+Plugin 'mxw/vim-jsx'
+Plugin 'AndrewRadev/sideways.vim'
+Plugin 'sbdchd/neoformat'
 
 "Snipmates
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -69,6 +80,9 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 imap jj <Esc>
 
+nnoremap <C-b><C-h> :SidewaysLeft<cr>
+nnoremap <C-b><C-l> :SidewaysRight<cr>
+
 " JSON Formatter
 nmap <silent> =j :%!python -m json.tool <CR>
 
@@ -100,4 +114,14 @@ let g:html_indent_inctags = "html,body,head,tbody"
 autocmd Filetype java setlocal ts=4 sts=4 sw=4 expandtab
 autocmd Filetype python setlocal ts=4 sts=4 sw=4 expandtab
 autocmd Filetype jsp setlocal ts=4 sts=4 sw=4 expandtab
-autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
+autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab 
+autocmd Filetype javascript set formatprg=prettier\ --print-width=100\ --no-semi\ --tab-width=4
+autocmd BufWritePre *.js Neoformat
+autocmd BufwritePre *.jsx Neoformat
+
+let g:neoformat_try_formatprg = 1
+
+
+set statusline+=%F
+set laststatus=2
+
